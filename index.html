@@ -9,46 +9,6 @@
 	<title>Preguntas Frecuentes</title>
 </head>
 <body>
-<!-- Messenger plugin de chat Code -->
-<div id="fb-root"></div>
-
-<!-- Your plugin de chat code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "102208382123828");
-  chatbox.setAttribute("attribution", "biz_inbox");
-  window.fbAsyncInit = function() {
-	FB.init({
-	  xfbml            : true,
-	  version          : 'v11.0'
-	});
-  };
-
-  (function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
-	fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<h1 class="titulo g">Información Relevante</h1>
-<div class="cont-padre">
-	<div class="izquierda">
-		<h1 class="titulo">Ayudante virtual</h1>
-		<iframe
-		class="chatbot"
-		allow="microphone;"
-		width="350"
-		height="430"
-		src="https://console.dialogflow.com/api-client/demo/embedded/a0714d54-e655-4f01-88ca-ce5dca650a03">
-	</iframe>
-	</div>
-
 
 	<div class="derecha">
 		<section class="preguntas-frecuentes">
@@ -133,6 +93,45 @@
 	</div>
 </div>
 
+<!-- Messenger plugin de chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your plugin de chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "102208382123828");
+  chatbox.setAttribute("attribution", "biz_inbox");
+  window.fbAsyncInit = function() {
+	FB.init({
+	  xfbml            : true,
+	  version          : 'v11.0'
+	});
+  };
+
+  (function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<h1 class="titulo g">Información Relevante</h1>
+<div class="cont-padre">
+	<div class="izquierda">
+		<h1 class="titulo">Ayudante virtual</h1>
+		<iframe
+		class="chatbot"
+		allow="microphone;"
+		width="350"
+		height="430"
+		src="https://console.dialogflow.com/api-client/demo/embedded/a0714d54-e655-4f01-88ca-ce5dca650a03">
+	</iframe>
+</div>
 
 	<script src="js/categorias.js"></script>
 	<script src="js/preguntasFrecuentes.js"></script>
