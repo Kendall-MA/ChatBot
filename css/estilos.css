@@ -1,4 +1,5 @@
 :root {
+	--navbar: #015289;
 	--primario: tomato;
 	--gris-claro: #B8B8B8;
 	--sombra: 0 0 15px 0 rgba(185,185,185, .50);
@@ -6,7 +7,7 @@
 }
 
 * {
-	box-sizing: border-box;
+	box-sizing: content-box;
 	margin: 0;
 	padding: 0;
 }
@@ -14,6 +15,11 @@
 body {
 	background: #f8fafb;
 	font-family: 'Roboto', sans-serif;
+}
+
+#cr{
+	width: 10rem;
+	cursor: pointer;
 }
 
 .cont-padre{
@@ -42,11 +48,10 @@ body {
 }
 
 .titulo {
-	color: #444;
+	color: whitesmoke;
 	font-size: 32px;
 	font-weight: bold;
 	text-align: center;
-	margin: 60px 0;
 }
 .g{
 		color: #000;
@@ -66,7 +71,6 @@ body {
 	cursor: pointer;
 	text-align: center;
 	font-size: 20px;
-	padding: 20px;
 	border-radius: 10px;
 	background: #fff;
 	font-weight: bold;
@@ -80,7 +84,7 @@ body {
 }
 
 .categoria:hover path {
-	fill: var(--primario);
+	fill: var(--navbar);
 }
 
 .categoria svg {
@@ -99,11 +103,86 @@ body {
 }
 
 .categoria.activa path {
-fill: var(--primario);
+fill: var(--navbar);
+}
+
+#feedback{
+	display: flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#feedback-area{
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#logo-footer{
+	width: 15rem;
+}
+
+#logos{
+	width: 3rem;
+}
+#logo-yt{
+	width: 3.3rem;
+}
+
+.cont1{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+.cont2{
+	margin-left: 2rem;
+	display: flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+}
+
+button {
+	background-color: var(--navbar);
+	color: whitesmoke;
+	border: 1px solid whitesmoke; 
+ 	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+ 	font-size: 16px;
+  	margin: 4px 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+  	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+	background-color: whitesmoke;
+	color: var(--navbar);
+	border: 1px solid var(--navbar);
+}
+
+#feedback > *{
+	color: whitesmoke;
+}
+.hide {
+    display: none;
+}
+
+.btn-enviar {
+    display: block;
 }
 
 
 /*! ============= Contenedor Preguntas ============= */
+.derecha{
+	background-image: url(../img/bg.jpg);
+}
 
 .contenedor-preguntas {
 	display: none;
