@@ -266,5 +266,14 @@ button:hover{
 }
 
 @media screen and (max-width: 500px){
+	.categoria {
+		height: 100px;
+		
+	}
 
+	.categoria svg {
+		width: 30px;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
 }
