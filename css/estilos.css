@@ -255,8 +255,6 @@ button:hover{
 		align-items: center;
 		justify-content: center;
 		border-radius: 5px;
-		gap:5px;
-		max-height: 100px;
 	}
 
 	.categoria svg {
@@ -267,14 +265,5 @@ button:hover{
 }
 
 @media screen and (max-width: 500px){
-	.categoria {
-		max-height: 120px;
-		
-	}
 
-	.categoria svg {
-		width: 30px;
-		margin-right: 10px;
-		margin-bottom: 0;
-	}
 }
