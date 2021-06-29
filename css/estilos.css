@@ -22,7 +22,7 @@ body {
 	cursor: pointer;
 }
 
-.cc{
+.cc, #gracias-area,#feedback-area{
 	margin: 40px;
 	font-size: 14px;
 	font-weight:lighter;
