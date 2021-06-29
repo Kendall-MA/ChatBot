@@ -42,7 +42,8 @@ body {
 }
 
 .preguntas-frecuentes {
-	width: 80%;
+	width: 60%;
+	padding:10px;
 	margin: 40px auto;
 }
 
